@@ -1,0 +1,80 @@
+*{ font-family: 'Varela Round', sans-serif;}
+.card-a{
+   width: 100%;
+    height: initial;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .a{background-image: url('../../assets/images/fast.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 50%;}
+  .w3-image1{
+   width: 100%;  
+   height: 400; 
+   background-size: cover;
+  }
+  .modal-header{
+      text-align: center !important;
+  }
+  .btn { border: none !important;
+outline: none !important;}
+  .font1{color: black; font-size: xx-large;
+}
+.font2{color: black; font-size: x-large;}
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+.textStyle{
+    font-size:xx-large;
+}
+.w3-light-grey{background-color: white;}
+body {
+    background: linear-gradient(to left, #51cc48, #39df9c);
+    min-height: 100vh;
+}
+.w3-row-padding{
+    text-align: center;
+}
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+.basic{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center; 
+   }
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(17, 16, 16);
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}

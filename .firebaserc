@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "my-project-d3b02": {
+      "hosting": {
+        "my-app": [
+          "my-project-d3b02"
+        ]
+      }
+    }
+  }
+}
