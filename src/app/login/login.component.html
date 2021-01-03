@@ -4,59 +4,96 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<div *ngIf="islogin==true" style="margin-top: 3%;">
-<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" style="margin: 10%; margin-top: 2%;" id="contact" >
-  <h4 class="w3-center">התחברות</h4>
-  <hr>
-  
-<div>
-     <div class="w3-section r">
-      <label>מייל</label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-section r" >
-      <label>סיסמא</label>
-      <input class="w3-input w3-border" type="password" required name="password">
-    </div>
-    <button type="submit" class="w3-button w3-block w3-dark-grey">כניסה</button>
-    <div style="text-align:center;" >
-    <a  href="#">שחכת סיסמא</a><br>
-    <a style="text-align: center;" href="#" (click)="change()" >?עדיין לא רשום</a>
-  </div>
-</div>
-</div></div>
-<div *ngIf="islogin==false"style="margin-top: 3%;">
-<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" style="margin: 10%; margin-top: 2%;" id="contact">
-  <h4 class="w3-center">הרשמה</h4>
-  <hr>
-  
-<div>
-     <div class="w3-section r">
-      <label>שם</label>
-      <input class="w3-input w3-border" type="text" required name="name">
-    </div>
-    <div class="w3-section r">
-      <label>מייל</label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-section r" >
-      <label>סיסמא</label>
-      <input class="w3-input w3-border" type="password" required name="password">
-    </div>
-    <div class="w3-section" style="padding-left:20%;" >
-      <label class="container">יזם
-        <input  type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      </div>
-      <div class="w3-section" style="padding-left:20%;" >
-        <label class="container">מעונין להשתתף
-          <input  type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        </div>
-    <button type="submit" class="w3-button w3-block w3-dark-grey"(click)="change()">הרשמה</button>
  
+ <div class="w3-row w3-padding-32" *ngIf= "islogin==true"> 
+  <div class="w3-col m6 w3-padding-large w3-hide-small" >
+  <img src="../../assets/images/undraw_secure_login_pdn4.svg" class="w3-round w3-image w3-opacity-min" style=" width:100%; margin-left:0%;">
+ </div>
+ <div class="w3-col m6 w3-padding-large">
+  <div  style="margin-top: 3%;">
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact" >
+      <h4 class="w3-center">התחברות</h4>
+      <hr>
+      
+    <div>
+         <div class="w3-section r">
+          <label>מייל</label>
+          <input class="w3-input w3-border" type="text" required name="Email">
+        </div>
+        <div class="w3-section r" >
+          <label>סיסמא</label>
+          <input class="w3-input w3-border" type="password" required name="password">
+        </div>
+        <button type="submit" class="w3-button w3-block w3-dark-grey">כניסה</button>
+        <div style="text-align:center;" >
+        <a  href="#">שחכת סיסמא</a><br>
+        <a style="text-align: center;" href="#" (click)="change()" >?עדיין לא רשום</a>
+      </div>
+    </div>
+    </div> 
+    
+    </div>
 </div>
-</div></div>
+</div>
+
+<div class="w3-row w3-padding-32" *ngIf= "islogin==false">
+  <div class="w3-col m6 w3-padding-large w3-hide-small" >
+  <img src="../../assets/images/mobile_login.svg" class="w3-round w3-image w3-opacity-min" style=" width:100%; margin-left:0%;">
+ </div>
+ <div class="w3-col m6 w3-padding-large">
+  <div *ngIf="islogin==true"style="margin-top: 3%;">
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" style="margin: 10%; margin-top: 2%;" id="contact">
+      <h4 class="w3-center">הרשמה</h4>
+      <hr>
+      
+    <div>
+         <div class="w3-section r">
+          <label>שם</label>
+          <input class="w3-input w3-border" type="text" required name="name">
+        </div>
+        <div class="w3-section r">
+          <label>מייל</label>
+          <input class="w3-input w3-border" type="text" required name="Email">
+        </div>
+        <div class="w3-section r" >
+          <label>סיסמא</label>
+          <input class="w3-input w3-border" type="password" required name="password">
+        </div>
+        <div class="w3-section" style="padding-left:20%;" >
+          <label class="container">יזם
+            <input  type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          </div>
+          <div class="w3-section" style="padding-left:20%;" >
+            <label class="container">מעונין להשתתף
+              <input  type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            </div>
+        <button type="submit" class="w3-button w3-block w3-dark-grey"(click)="change()">הרשמה</button>
+     
+    </div>
+    </div>
+    </div> 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>

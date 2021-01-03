@@ -22,9 +22,9 @@ export class LoginComponent implements OnInit {
  //public authService: AuthService
 
   constructor( public authService: AngularFireAuth,private auth:AuthService, private LoginService:LoginService) { }
-  public islogin:boolean
-  ngOnInit(): void {
-    this.islogin=true;
+ islogin:boolean
+   ngOnInit(): void {
+    this.islogin=true;  
   }
   change(){
     this.islogin=!this.islogin;
