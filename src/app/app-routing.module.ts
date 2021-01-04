@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProjectComponent } from './project/project.component';
+import { RegistrationProjectComponent } from './registration-project/registration-project.component';
 
 
  
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path:'contact' ,component:ContactComponent},
   {path:'MyProfile' ,component:MyProfileComponent},
   {path:'login',component:LoginComponent},
+  {path:'project',component:ProjectComponent},
+  {path:'registration-project',component:RegistrationProjectComponent},
   {path: '**', redirectTo: '/not-found'}
   
 ];

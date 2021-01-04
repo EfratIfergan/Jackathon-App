@@ -15,6 +15,8 @@ import { AuthService } from './auth.service';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { ProjectComponent } from './project/project.component';
+import { RegistrationProjectComponent } from './registration-project/registration-project.component';
 
 
 
@@ -27,6 +29,8 @@ import { CommonModule } from '@angular/common';
     MyProfileComponent,
     LoginComponent,
     FooterComponent,
+    ProjectComponent,
+    RegistrationProjectComponent,
   
   ],
   
