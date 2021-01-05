@@ -2,11 +2,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <div>
   <div class="w3-row w3-padding-32" *ngIf="islogin==true">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="../../assets/images/undraw_secure_login_pdn4.svg" class="w3-round w3-image w3-opacity-min"
+      <img src="../../assets/images/38435-register.gif" class="w3-round w3-image w3-opacity-min"
         style=" width:100%; margin-left:0%;">
     </div>
     <div class="w3-col m6 w3-padding-large">
@@ -26,7 +26,7 @@
             </div>
             <button type="submit" class="w3-button w3-block w3-dark-grey">כניסה</button>
             <div style="text-align:center;">
-              <a href="#">שחכת סיסמא</a><br>
+              <a data-toggle="modal" data-target=".bd-example-modal-lg1">שחכת סיסמא</a><br>
               <a style="text-align: center;" (click)="change()">?עדיין לא רשום</a>
             </div>
           </div>
@@ -38,7 +38,7 @@
 
   <div class="w3-row w3-padding-32" *ngIf="islogin==false">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="../../assets/images/mobile_login.svg" class="w3-round w3-image w3-opacity-min"
+      <img src="../../assets/images/singup_animation.gif" class="w3-round w3-image w3-opacity-min"
         style=" width:100%; margin-left:0%;">
     </div>
     <div class="w3-col m6 w3-padding-large">
@@ -63,10 +63,13 @@
             </div>
             <div style="padding: 2%; margin-left:18%;">
             <label for="contactChoice1" style="color: rgb(15, 15, 15);"> רוצה להציע מיזם </label>
-            <input type="radio" id="contactChoice1" name="contact" style="margin: 1%;" value="email" checked>
+            <input type="radio" id="contactChoice1" name="contact" style="margin: 1%;" (click)="changeValue()" value="true" checked>
            
             <label for="contactChoice2" > רוצה לקחת חלק במיזם </label>
             <input type="radio" id="contactChoice2" name="contact" style="margin: 1%;" value="phone" >
+            </div>
+            <div *ngIf="changeValue==true">
+<p>gggggggg</p>
             </div>
             <button type="submit" class="w3-button w3-block w3-dark-grey" (click)="change()">הרשמה</button>
           </div>
@@ -74,7 +77,28 @@
       </div>
     </div>
   </div>
+ <div class="modal fade bd-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class=" w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="w3-center" style="size: 70px;">לא קרה כלום! הכנס כתובת מייל</h4>
+              <hr>
+              <img src="../../assets/images/forget_password_animation.gif" style="width:50%; height: 30%; margin-left:33%;">
+              <div>
+                  <div class="w3-section" style="text-align: center;">
+                      <label>כתובת המייל שלך</label>
+                      <input class="w3-input w3-border w3-light-grey" type="text" required name="Email">
+                  </div>
+                  <button type="submit" class="w3-button w3-block w3-dark-grey">אישור שליחה</button>
 
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div> 
 </div>
 
 

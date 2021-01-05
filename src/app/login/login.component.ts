@@ -11,14 +11,21 @@ export class LoginComponent implements OnInit {
 
   constructor( private LoginService:LoginService) { }
   logIn = true;
+  changeValue:boolean;
+
   islogin:boolean
    ngOnInit(): void {
    this.islogin=true;
+   this.changeValue=false;
   }
   change(){
     debugger
   this.islogin=!this.islogin;
       debugger
+  }
+  changeValue1(){
+    debugger
+    this.changeValue=true;
   }
 
 

@@ -15,6 +15,6 @@ export class PageNotFoundComponent  {
   value:string="";
   ngOnInit(): void {
   }
-
-
+  // style.display='block'"
+  openModol(){}
 }
